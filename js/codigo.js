@@ -8,11 +8,19 @@ let mensaje = "el precio final es de : "
 const iva= 0.21;
 let producto;
 
-edad = parseInt(prompt("¿Cuantos años tiene?"));
 
-while(edad < 18){
-    edad = parseInt(prompt("Solo mayores de 18 pueden comprar"));
+function calcularEdad(){
+
+    edad = parseInt(prompt("¿Cuantos años tiene?"));
+
+    while(edad < 18){
+        edad = parseInt(prompt("Solo mayores de 18 pueden comprar"));
+    }
 }
+
+calcularEdad();
+
+function calcularPrecioProductos(){
 
 producto = prompt("¿Que quiere comprar? (Sahumerio, Perfume)").toLocaleLowerCase();
 
@@ -34,8 +42,9 @@ if(producto == "sahumerio"){
     alert(`Elegiste el perfume ${mensaje} $ ${precioFinal}`);
 }
 
+}
 
-
+calcularPrecioProductos();
 
 
 
