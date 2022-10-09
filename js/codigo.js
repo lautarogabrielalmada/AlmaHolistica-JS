@@ -124,6 +124,12 @@ while(seleccion != "si" && seleccion != "no"){
     
 };
 
+
+//Preguntamos el tipo de producto que quiere comprar
+
+
+
+
 //En caso de que sea si o no 
 
 if(seleccion == "si"){
@@ -204,3 +210,24 @@ const total = carrito.reduce((acc, el) => acc + el.precio * el.unidades, 0);
 alert(`El total a pagar por todo es de: $ ${total}`);
 
 
+function FiltrarTipo(){
+
+    let tipoDeProducto = prompt("¿Que tipo de producto quiere comprar? (Sahumos - Sahumerios)").toLocaleLowerCase();
+
+    while(tipoDeProducto != "sahumos" && tipoDeProducto != "sahumerios"){
+        alert("Indique el tipo que quiere");
+        tipoDeProducto = prompt("¿Que tipo de producto quiere comprar? (Sahumos - Sahumerios)").toLocaleLowerCase();
+    };
+
+    if(tipoDeProducto == "sahumos"){
+        
+        const resultadoSahumos = productos.filter((el) => el.tipo.includes("sahumos"))
+        alert(resultadoSahumos);
+
+    }else if(tipoDeProducto == "sahumerios"){
+        const resultadoSahumerios = productos.filter((el) => el.tipo.includes("sahumerios"))
+        alert(resultadoSahumerios);
+
+    }
+    
+}
