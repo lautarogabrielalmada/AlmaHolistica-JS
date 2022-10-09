@@ -1,4 +1,4 @@
-
+/* 
 let sahumerio = 500;
 let perfume = 3500;
 const iva= 0.21;
@@ -17,6 +17,7 @@ function calcularEdad(){
 
 
 }
+
 
 calcularEdad();
 
@@ -50,6 +51,62 @@ function calcularPrecioProductos(){
 
 calcularPrecioProductos();
 
+*/
+
+
+/*Array con los productos*/
+
+const Productos = [
+    {
+        id:1,
+        tipo:"sahumos",
+        nombre:"kit herbal",
+        precio:1220
+    },
+
+    {
+        id:2,
+        tipo:"sahumerios",
+        nombre:"sahumerio natural",
+        precio:352
+    },
+
+    {
+        id:3,
+        tipo:"sahumerios",
+        nombre:"sahumerio sagrada madre",
+        precio:334
+    },
+
+    {
+        id:4,
+        tipo:"sahumerios",
+        nombre:"sahumerio aromanza",
+        precio:420
+    },
+
+    {
+        id:5,
+        tipo:"sahumos",
+        nombre:"7 chakras",
+        precio:352
+    },
+
+    {
+        id:6,
+        tipo:"sahumos",
+        nombre:"piramides energeticas",
+        precio:488
+    },
+
+    {
+        id:7,
+        tipo:"sahumos",
+        nombre:"bombita herbal",
+        precio:230
+    },
+
+];
 
 
 
