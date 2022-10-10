@@ -359,3 +359,5 @@ const crearProducto = () => {
     return producto;
 }
     
+ComprarCatalogo();
+crearProducto();
