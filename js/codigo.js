@@ -108,7 +108,9 @@ const productos = [
 
 ];
 
+let tipoDeProductoSelec= [];
 let carrito = [];
+
 
 /*Preguntamos si quiere comprar un producto y validamos */
 
@@ -217,17 +219,28 @@ function FiltrarTipo(){
     while(tipoDeProducto != "sahumos" && tipoDeProducto != "sahumerios"){
         alert("Indique el tipo que quiere");
         tipoDeProducto = prompt("¿Que tipo de producto quiere comprar? (Sahumos - Sahumerios)").toLocaleLowerCase();
+        break;
     };
 
     if(tipoDeProducto == "sahumos"){
-        
-        const resultadoSahumos = productos.filter((el) => el.tipo.includes("sahumos"))
-        alert(resultadoSahumos);
+       
+       for(let productoSelec of productos){
 
-    }else if(tipoDeProducto == "sahumerios"){
-        const resultadoSahumerios = productos.filter((el) => el.tipo.includes("sahumerios"))
-        alert(resultadoSahumerios);
+        if (productoSelec.tipo == "sahumos"){
 
-    }
+            tipoDeProducto.push(productoSelec.nombre +" "+ "$" + productoSelec.precio);
+            alert(tipoDeProducto.join(" -- "));
+
+        }else if(productoSelec.tipo == "sahumerios"){
+
+            tipoDeProducto.push(productoSelec.nombre +" "+ "$" + productoSelec.precio);
+            alert(tipoDeProducto.join(" -- "));
+            
+        }
+       }
     
+
+    
+    
+    }
 }
