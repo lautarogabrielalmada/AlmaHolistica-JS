@@ -1,7 +1,9 @@
 
 
 const shopContent = document.getElementById("shopContent");
+
 let verCarrito = document.getElementById("verCarrito");
+
 const modalContainer = document.getElementById("modalContainer");
 
 
@@ -10,7 +12,7 @@ const modalContainer = document.getElementById("modalContainer");
 
 let carrito = [];
 
-
+/////////////////////////////////////////
 productos.forEach((producto)=>{
 
     //Creamos un div con document.createelement
@@ -42,6 +44,7 @@ productos.forEach((producto)=>{
     });
 })
 
+///////////////////////////////////////////////////
 verCarrito.addEventListener("click",()=>{
 
     modalContainer.innerHTML = "";
