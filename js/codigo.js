@@ -1,71 +1,36 @@
 
 
+const shopContent = document.getElementById("shopContent");
 
 /*Array con los productos*/
 
-const productos = [
-    {
-        id:1,
-        tipo:"sahumos",
-        nombre:"kit herbal",
-        imag:"",
-        precio:1220
-    },
 
-    {
-        id:2,
-        tipo:"sahumerios",
-        nombre:"sahumerio natural",
-        imag:"",
-        precio:352
-    },
-
-    {
-        id:3,
-        tipo:"sahumerios",
-        nombre:"sahumerio sagrada madre",
-        imag:"",
-        precio:334
-    },
-
-    {
-        id:4,
-        tipo:"sahumerios",
-        nombre:"sahumerio aromanza",
-        imag:"",
-        precio:420
-    },
-
-    {
-        id:5,
-        tipo:"sahumos",
-        nombre:"7 chakras",
-        imag:"",
-        precio:352
-    },
-
-    {
-        id:6,
-        tipo:"sahumos",
-        nombre:"piramides energeticas",
-        imag:"",
-        precio:488
-    },
-
-    {
-        id:7,
-        tipo:"sahumos",
-        nombre:"bombita herbal",
-        imag:"",
-        precio:230
-    },
-
-];
 
 let carrito = [];
 
 
+productos.forEach((producto)=>{
 
+    //Creamos un div con document.createelement
+    let content = document.createElement("div");
+    content.className = "card"
+    //Le asignamos contenido con innerhtml
+    content.innerHTML = `
+    <img src="${producto.img}">
+    <h3>${producto.nombre}</h3>
+    <p class="price">${producto.precio}$</p>
+    `;
+
+    shopContent.append(content);
+
+    let comprar = document.createElement("button");
+    comprar.innerText = "comprar";
+    comprar.className = "comprar"
+
+    content.append(comprar);
+
+    //Ahora colocamos el div en el documento html con un padre con id y class
+})
 
 
 
