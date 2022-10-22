@@ -8,6 +8,7 @@ const productos = [
         id:1,
         tipo:"sahumos",
         nombre:"kit herbal",
+        imag:"",
         precio:1220
     },
 
@@ -15,6 +16,7 @@ const productos = [
         id:2,
         tipo:"sahumerios",
         nombre:"sahumerio natural",
+        imag:"",
         precio:352
     },
 
@@ -22,6 +24,7 @@ const productos = [
         id:3,
         tipo:"sahumerios",
         nombre:"sahumerio sagrada madre",
+        imag:"",
         precio:334
     },
 
@@ -29,6 +32,7 @@ const productos = [
         id:4,
         tipo:"sahumerios",
         nombre:"sahumerio aromanza",
+        imag:"",
         precio:420
     },
 
@@ -36,6 +40,7 @@ const productos = [
         id:5,
         tipo:"sahumos",
         nombre:"7 chakras",
+        imag:"",
         precio:352
     },
 
@@ -43,6 +48,7 @@ const productos = [
         id:6,
         tipo:"sahumos",
         nombre:"piramides energeticas",
+        imag:"",
         precio:488
     },
 
@@ -50,10 +56,50 @@ const productos = [
         id:7,
         tipo:"sahumos",
         nombre:"bombita herbal",
+        imag:"",
         precio:230
     },
 
 ];
+
+let carrito = [];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 
 let productosSahumos= [];
 let productosSahumerios= [];
@@ -61,7 +107,7 @@ let carrito = [];
 
 function ComprarCatalogo(){
 
-    //Preguntamos que tipo quiere comprar y validamos
+    Preguntamos que tipo quiere comprar y validamos
 
     let tipoDeProducto = prompt("¿Que productos quiere ver? (Sahumos - Sahumerios - Todos)").toLocaleLowerCase();
 
@@ -71,7 +117,7 @@ function ComprarCatalogo(){
         break;
     };
 
-    //Hacemos la logica recorremos el array y guardamos segun lo que el usuario pide en el array correcto
+    Hacemos la logica recorremos el array y guardamos segun lo que el usuario pide en el array correcto
     if(tipoDeProducto == "sahumos"){
        
        for(let productoSahumo of productos){
@@ -360,4 +406,5 @@ const crearProducto = () => {
 }
     
 ComprarCatalogo();
-crearProducto();
+crearProducto();*/
+
