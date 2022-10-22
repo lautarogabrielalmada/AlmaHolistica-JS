@@ -70,18 +70,21 @@ verCarrito.addEventListener("click",()=>{
 
     carrito.forEach((producto) => {
 
-    let carritoContent = document.createElement("div");
-    carritoContent.className = "modal-content";
-    carritoContent.innerHTML = `
-    <img src = "${producto.img}">
-    <h3>${producto.nombre}</h3>
-    <p>${producto.precio}</p>
-    `;
-    modalContainer.append(carritoContent);
+        let carritoContent = document.createElement("div");
+        carritoContent.className = "modal-content";
+        carritoContent.innerHTML = `
+        <img src = "${producto.img}">
+        <h3>${producto.nombre}</h3>
+        <p>${producto.precio}</p>
+        `;
+        modalContainer.append(carritoContent);
     });
 
-    const total = carrito.reduce((acc, el)=>acc + el.precio, 0); 
-    const totalBuying = createElement("div");
+    //Total del carrito
+
+    const total = carrito.reduce((acc, el) => acc + el.precio, 0); 
+
+    const totalBuying = document.createElement("div");
     totalBuying.className = "total-content";
     totalBuying.innerHTML = `
     total a pagar: ${total} $`;
