@@ -190,3 +190,12 @@ body{
     position: absolute;
     display: none;
 }
+
+
+.sumar{
+    cursor: pointer;
+}
+
+.restar{
+    cursor: pointer;
+}

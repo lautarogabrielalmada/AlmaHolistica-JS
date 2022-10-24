@@ -9,6 +9,7 @@ const modalContainer = document.getElementById("modalContainer");
 const cantidadCarrito = document.getElementById("cantidadCarrito");
 
 
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 
 
@@ -56,10 +57,21 @@ productos.forEach((producto)=>{
         }
 
         carritoCounter();
+        saveLocal();
         
     });
 })
 
 ///////////////////////////////////////////////////
+
+
+//Stringyfi para que pase como string, solo recibe string SET
+
+const saveLocal = () => {
+    localStorage.setItem("carrito",JSON.stringify(carrito));
+}
+
+
+
 
 
