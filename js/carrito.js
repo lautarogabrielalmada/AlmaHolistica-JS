@@ -31,7 +31,7 @@ const pintarCarrito = () =>{
         let carritoContent = document.createElement("div");
         carritoContent.className = "modal-content";
         carritoContent.innerHTML = `
-        <img src = "${producto.img}">
+        <img src ="${producto.imag}">
         <h3>${producto.nombre}</h3>
         <p>$${producto.precio}</p>
         <span class="restar">-</span>
@@ -48,7 +48,7 @@ const pintarCarrito = () =>{
             if(producto.cantidad !== 1){
                 producto.cantidad--;
             }
-            
+            saveLocal();
             pintarCarrito();
         });
 
@@ -57,6 +57,7 @@ const pintarCarrito = () =>{
         sumar.addEventListener("click",()=>{
             
             producto.cantidad++;
+            saveLocal();
             pintarCarrito();
         });
 
@@ -109,6 +110,7 @@ const eliminarProducto = () => {
 //Contar productos en carrito
 
 const carritoCounter = () => {
+
    cantidadCarrito.style.display = "block";
 
    const carritoLength = carrito.length;
@@ -118,4 +120,3 @@ const carritoCounter = () => {
    cantidadCarrito.innerText = JSON.parse(localStorage.getItem(""));
 };
 
-carritoCounter();
