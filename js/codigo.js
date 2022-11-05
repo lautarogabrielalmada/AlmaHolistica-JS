@@ -22,10 +22,21 @@ productos.forEach((producto)=>{
     content.className = "card"
     //Le asigno contenido con innerhtml
     content.innerHTML = `
-    <img src="${producto.imag}">
-    <h3>${producto.nombre}</h3>
-    <p class="price">${producto.precio}$</p>
-    `;
+    
+    <div class="row">
+        <div class="col-6">
+                <div class="card " style="width: 18rem;">
+            <img class="card-img-top" src="${producto.imag}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">${producto.nombre}</h5>
+                <p class="card-text">$${producto.precio}</p>
+            </div>
+            </div>
+        </div>
+    </div>
+    `
+    
+    ;
 
     shopContent.append(content);
 
