@@ -67,14 +67,7 @@ const pintarCarrito = () =>{
         eliminar.addEventListener("click", ()=>{
             eliminarProducto(producto.id);
         })
-       // console.log(carrito.length);
-
-        //let eliminar = document.createElement("span");
-        //eliminar.innerText = "❌";
-        //eliminar.className = "delete-product";
-       // carritoContent.append(eliminar);
-
-       // eliminar.addEventListener("click",eliminarProducto)
+       
     });
 
 

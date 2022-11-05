@@ -17,10 +17,10 @@ let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 /////////////////////////////////////////
 productos.forEach((producto)=>{
 
-    //Creamos un div con document.createelement
+    //Creo un div con document.createelement
     let content = document.createElement("div");
     content.className = "card"
-    //Le asignamos contenido con innerhtml
+    //Le asigno contenido con innerhtml
     content.innerHTML = `
     <img src="${producto.imag}">
     <h3>${producto.nombre}</h3>
