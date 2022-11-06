@@ -24,7 +24,7 @@ productos.forEach((producto)=>{
     content.innerHTML = `
     
     <div class="row">
-        <div class="col-6">
+        <div>
                 <div class="card " style="width: 18rem;">
             <img class="card-img-top" src="${producto.imag}" alt="Card image cap">
             <div class="card-body">
@@ -46,6 +46,8 @@ productos.forEach((producto)=>{
 
     content.append(comprar);
 
+    
+
     comprar.addEventListener("click",()=>{
 
         const repeat = carrito.some((repeatProduct) => repeatProduct.id === producto.id);
@@ -66,6 +68,14 @@ productos.forEach((producto)=>{
             })
             
         }
+
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Se agrego al carrito',
+            showConfirmButton: false,
+            timer: 1500
+          })
 
         carritoCounter();
         saveLocal();

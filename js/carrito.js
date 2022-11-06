@@ -116,5 +116,7 @@ const carritoCounter = () => {
    localStorage.setItem("carritoLength", JSON.stringify("carritoLength"));
 
    cantidadCarrito.innerText = JSON.parse(localStorage.getItem(""));
+
+
 };
 
