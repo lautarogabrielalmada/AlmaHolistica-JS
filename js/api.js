@@ -1,6 +1,6 @@
  function ConsultarApi(){
 
-    const url = "https://jsonplaceholder.typicode.com/comments";
+    const url = "https://jsonplaceholder.typicode.com/users";
 
     fetch(url)
 
@@ -15,39 +15,45 @@
 
 
 
- function mostrarHTML(datos){
 
-    const apiContent = document.querySelector("#apiContent");
 
-    let html = "";
+  function mostrarHTML(datos){
+
+     const apiContent = document.querySelector("#apiContent");
+
+     let html = "";
 
     datos.forEach(perfil => {
-                 const{name,email,body} = perfil;
+                  const{name,email,username} = perfil;
 
-        html += `     
-        <div class="comment mt-4 text-justify float-left">
-                    <img src="https://i.imgur.com/yTFUilP.jpg" alt="" class="rounded-circle" width="40" height="40">
-                    <h4>${name}</h4>
-                    <span>${email}</span>
-                    <br>
-                    <p>${body}</p>
-                </div>
+        html += `  
+        <div class="row">
+        <div class="col-6">
+                <div class="card " style="width: 18rem;">
+            <div class="card-body apiCard">
+                <h5 class="card-title">${name}</h5>
+                <p class="card-text">${email}</p>
+                <p class="card-text">${username}</p>
+            </div>
+            </div>
+        </div>
+    </div>
         
         
         
         `;
 
-         apiContent.innerHTML = html;
+          apiContent.innerHTML = html;
 
 
-     });
+      });
 
-};
-
-
+ };
 
 
-// ConsultarApi();
+
+
+ ConsultarApi();
 
 
 

@@ -208,3 +208,16 @@ body{
 .restar{
     cursor: pointer;
 }
+
+/* Api content */
+
+.apiCard{
+    border:none;
+    margin: 2rem;
+}
+
+.api-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
