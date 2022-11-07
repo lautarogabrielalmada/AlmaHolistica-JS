@@ -98,6 +98,7 @@ const eliminarProducto = (id) => {
         return carritoId !== foundId;
     });
 
+
     carritoCounter();
     saveLocal();
     pintarCarrito();
