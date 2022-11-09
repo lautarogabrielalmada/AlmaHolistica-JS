@@ -1,4 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,100&family=Roboto:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Love+Light&family=Raleway:ital,wght@0,500;1,100&family=Roboto:wght@500&display=swap');
+
+*{font-family: 'Raleway', sans-serif;
+}
+
 body{
+    
     margin: 0px;
 }
 
@@ -38,6 +47,10 @@ body{
 
 /*styles header*/
 
+h1{
+    font-family: 'Dancing Script', cursive;
+}
+
 .banner{
     background-size: cover;
     background-position: center;
@@ -66,6 +79,22 @@ body{
     color: white;
     opacity: 0.7;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+/* Estilo section 1 h2 */
+
+body > main > section{
+    width: 60vw;
+    margin-top: 20%;
+    margin-left: 20%;
+    text-align: center;
+
+}
+
+body > main > section h2{ 
+
+    margin-bottom: 5%;
+
 }
 
 /* Estilo cards */
@@ -122,11 +151,11 @@ body{
 /* Modal estilo */
 
 .modal-container{
-    width: 80%;
-    margin: 0 10%;
+    width: 50%;
+    margin-left: 50%;
     max-height: 88vh;
     color: #fff;
-    background-color: #121212;
+    background-color: #abd9f7;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -212,14 +241,23 @@ body{
 /* Api content */
 
 .apiCard{
-    border:none;
     margin: 2rem;
+    display: flex;
 }
 
 .api-content{
+    width: 80vw;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 80vw;
-    margin: auto;
+
+
+    
+}
+
+.api-img{
+    width: 100px;
+    height: 100px;
+    margin-right: 5%;
 }

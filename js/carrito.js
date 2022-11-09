@@ -15,7 +15,7 @@ const pintarCarrito = () =>{
     modalContainer.append(modalHeader);
 
     const modalButton = document.createElement("h3");
-    modalButton.innerText = "X";
+    modalButton.innerText = "x";
     modalButton.className = "modal-header-button";
 
     modalButton.addEventListener("click",()=>{
@@ -31,7 +31,7 @@ const pintarCarrito = () =>{
         let carritoContent = document.createElement("div");
         carritoContent.className = "modal-content";
         carritoContent.innerHTML = `
-        <img src ="${producto.imag}">
+        <img class="img-fluid" src ="${producto.imag}">
         <h3>${producto.nombre}</h3>
         <p>$${producto.precio}</p>
         <span class="restar">-</span>

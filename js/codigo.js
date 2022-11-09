@@ -24,7 +24,7 @@ productos.forEach((producto)=>{
     content.innerHTML = `
     
     <div class="row">
-        <div>
+        <div >
                 <div class="card " style="width: 18rem;">
             <img class="card-img-top" src="${producto.imag}" alt="Card image cap">
             <div class="card-body">

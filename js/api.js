@@ -27,17 +27,16 @@
                   const{name,email,username} = perfil;
 
         html += `  
-        <div class="row">
-        <div class="col-6">
-                <div class="card " style="width: 18rem;">
-            <div class="card-body apiCard">
-                <h5 class="card-title">${name}</h5>
-                <p class="card-text">${email}</p>
-                <p class="card-text">${username}</p>
+        <div class="mt-5 apiCard">
+            <img src="https://assets.stickpng.com/images/585e4bd7cb11b227491c3397.png" class="api-img">
+
+            <div>
+            <h3>${name}</h3>
+            <p>Email: ${email}</p>
+            <span>Usuario: ${username}</span>
             </div>
-            </div>
+
         </div>
-    </div>
         
         
         
