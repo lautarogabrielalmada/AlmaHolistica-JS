@@ -1,5 +1,9 @@
  
+const quienCompro = document.getElementById("quienCompro");
 
+quienCompro.addEventListener("click",()=>{
+    alert("hola");
+})
  
 
  
