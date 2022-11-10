@@ -61,7 +61,7 @@ quienCompro.addEventListener("click",()=>{
 
 
 
- 
+
 
 
 
