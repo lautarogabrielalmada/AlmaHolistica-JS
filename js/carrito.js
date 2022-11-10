@@ -32,7 +32,7 @@ const pintarCarrito = () =>{
         carritoContent.className = "modal-content";
         carritoContent.innerHTML = `
         <img class="img-fluid" src ="${producto.imag}">
-        <h3>${producto.nombre}</h3>
+        <p>${producto.nombre}</p>
         <p>$${producto.precio}</p>
         <span class="restar">-</span>
         <p>Cantidad: ${producto.cantidad}</p>
@@ -114,9 +114,11 @@ const carritoCounter = () => {
 
    const carritoLength = carrito.length;
 
+   
+
    localStorage.setItem("carritoLength", JSON.stringify("carritoLength"));
 
-   cantidadCarrito.innerText = JSON.parse(localStorage.getItem(""));
+   cantidadCarrito.innerText = JSON.parse("carritoLength");
 
 
 };

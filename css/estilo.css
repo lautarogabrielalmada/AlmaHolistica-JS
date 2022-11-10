@@ -155,7 +155,7 @@ body > main > section h2{
     margin-left: 50%;
     max-height: 88vh;
     color: #fff;
-    background-color: #abd9f7;
+    background-color: #8a8a8a;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -165,6 +165,7 @@ body > main > section h2{
     z-index: 9;
     top: 12vh;
     scrollbar-color: none;
+    border-radius: 50px;
 }
 
 .modal-container::-webkit-scrollbar{
@@ -194,6 +195,10 @@ body > main > section h2{
     align-items: center;
     width: 70%;
     margin: 10px;
+}
+
+.modal-content{
+    font-size: 1rem;
 }
 
 .modal-container div img {
@@ -263,3 +268,19 @@ body > main > section h2{
 }
 
 
+.quien-compro{
+    border-radius: 80px;
+    width: 80vw;
+    margin-left: 10%;
+    box-shadow: 10px 5px 5px black;
+    margin-bottom: 5%;
+    color: white;
+    background-color: #202020;
+}
+
+.quien-compro:hover{
+    background-color: #bde1fa;
+    color: black;
+    transition: 1s;
+    
+}
