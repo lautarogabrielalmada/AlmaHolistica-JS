@@ -23,7 +23,7 @@ productos.forEach((producto)=>{
     //Le asigno contenido con innerhtml
     content.innerHTML = `
     
-    <div class="row">
+    <div class="row card-Product">
         <div >
                 <div class="card " style="width: 18rem;">
             <img class="card-img-top" src="${producto.imag}" alt="Card image cap">

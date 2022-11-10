@@ -1,4 +1,6 @@
 
+
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,100&family=Roboto:wght@500&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Love+Light&family=Raleway:ital,wght@0,500;1,100&family=Roboto:wght@500&display=swap');
@@ -115,7 +117,7 @@ body > main > section h2{
     max-width: 300px;
     margin: auto;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10%;
 
 }
 
@@ -155,7 +157,7 @@ body > main > section h2{
     margin-left: 50%;
     max-height: 88vh;
     color: #fff;
-    background-color: #8a8a8a;
+    background-color: #4d5154;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -186,7 +188,14 @@ body > main > section h2{
 
 .modal-header-button{
     cursor:pointer;
+    color: white;
 }
+
+.modal-header-button:hover{
+    color: aqua;
+   transition: 2s;
+}
+
 
 .modal-container > .modal-content{
     display: flex;
@@ -269,18 +278,15 @@ body > main > section h2{
 
 
 .quien-compro{
-    border-radius: 80px;
+    
     width: 80vw;
     margin-left: 10%;
-    box-shadow: 10px 5px 5px black;
+   
     margin-bottom: 5%;
-    color: white;
-    background-color: #202020;
+   
 }
 
-.quien-compro:hover{
-    background-color: #bde1fa;
-    color: black;
-    transition: 1s;
-    
+footer{
+    margin-top: 30%;
 }
+
