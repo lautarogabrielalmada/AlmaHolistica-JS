@@ -30,7 +30,7 @@ quienCompro.addEventListener("click",()=>{
    
            html += `  
            <div class="mt-5 apiCard">
-               <img src="https://assets.stickpng.com/images/585e4bd7cb11b227491c3397.png" class="api-img">
+               <img src="https://img.freepik.com/foto-gratis/chico-worldface-espanol-fondo-blanco_53876-137665.jpg?w=826&t=st=1668043510~exp=1668044110~hmac=7ad0608fd673020d552eed0dbd1a1a336162e40de6eda5a8505304790216b3ca" class="api-img">
    
                <div>
                <h3>${name}</h3>
